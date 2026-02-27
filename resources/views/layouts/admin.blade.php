@@ -20,6 +20,9 @@
 
         <script src="https://kit.fontawesome.com/f54d65a2de.js" crossorigin="anonymous"></script>
 
+        <!-- wireUI -->
+        <wireui:scripts />
+
         <!-- Styles -->
         @livewireStyles
     </head>
