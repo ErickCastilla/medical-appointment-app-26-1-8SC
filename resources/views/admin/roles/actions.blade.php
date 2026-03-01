@@ -1,0 +1,16 @@
+<div class="flex items-center space-x-2">
+    <x-wire-button href="{{ route('admin.roles.edit', $role) }}" color="blue" xs>
+        <i>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </i>
+    </x-wire-button>
+
+    <form action="{{ route('admin.roles.destroy', $role) }}" method="POST" class="inline">
+        @csrf
+        @method('DELETE')
+        <x-wire-button type="submit" color="red" xs>
+            <i class="fa-solid fa-trash"></i>
+        </x-wire-button>
+    </form>
+
+</div>

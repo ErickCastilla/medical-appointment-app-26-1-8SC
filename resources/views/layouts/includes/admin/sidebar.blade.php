@@ -8,36 +8,14 @@
       "active" => request()->routeIs("admin.dashboard")
    ], 
    [
-      "header" => "Administración",
+      "header" => "Gestión",
    ],
    [
-      "name" => "Personas",
-      "icon" => "fa-solid fa-user-group",
-      "href" => route("admin.dashboard"),
-      "active" => request()->routeIs("admin.dashboard")
-   ],
-   [
-      "name" => "Tienda en linea",
-      "icon" => "fa-solid fa-gauge",
-      "href" => route("admin.dashboard"),
-      "active" => request()->routeIs("admin.dashboard"),
-      "submenu" => [
-         [
-            "name" => "Productos",
-            "href" => "#",
-            "active" => false,
-         ],
-         [
-            "name" => "Categorías",
-            "href" => "#",
-            "active" => false,
-         ],
-         [
-            "name" => "Pedidos",
-            "href" => "#",
-            "active" => false,
-         ]
-      ]
+      "name" => "Roles y permisos",
+      "icon" => "fa-solid fa-shield-halved",
+      "href" => route("admin.roles.index"),
+      "active" => request()->routeIs("admin.roles.index.*"),
+      
    ]
    ];
 
